@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+              url("../images/cafe1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+header {
+  background-color: #002244;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #002244;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffd700;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+footer {
+  background-color: #002244;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #002244;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #004488;
+}
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f9f9f9;
+  --header-bg: #111;
+  --header-text: #ffd700;
+  --link-color: #00ffcc;
+}
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
